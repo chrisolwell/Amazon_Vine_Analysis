@@ -1,10 +1,10 @@
 # Amazon_Vine_Analysis
 
 ## Overview
-We set out to determine if Vine members were more likely to provide positive reviews in exchange for free products. To test this we created a database using AWS, SQL and colabs that allowed us to filter through Amazon user review data. We looked at the data to see if reviewers in the Vine program, exhibit bias in their product reviews. For background, the Vine program was or is one in which, if I understand correctly, companies pay Amazon and provide Vine members with products at no cost in exchange for product reviews. The results...may surprise you.
+We set out to determine if Vine members were more likely to provide positive reviews in exchange for free products. To test this we created a database using AWS, SQL and colabs that allowed us to filter through Amazon user review data. We looked at the data to see if reviewers in the Vine program, exhibit bias in their product reviews. For background, the Vine program was or is one in which, if I understand correctly, companies pay Amazon and provide Vine members with products at no cost in exchange for product reviews. The results...may surprise you?
 
 ## Results
-Nope. Are reviewers promiscuous with 5-star reviews when there is SWAG involved? Probably not. I didn't do any stats on it, but the percentage of 5-star reviews is about the same, as you'll see. (This is a work in progress.)
+It depends what you expected. Are reviewers loose with 5-star reviews when there is free stuff involved? Probably not. I didn't do any stats on it, but the percentage of 5-star reviews is about the same, as you'll see. 
 
 We wrote pyspark code in colab to filter through massive amounts of data in order to learn the answers to three questions:
 
@@ -39,4 +39,4 @@ We wrote pyspark code in colab to filter through massive amounts of data in orde
 ## Summary
 As we see from those percentages, the likelyhood of getting a 5-star review on Amazon seems unlikely to be dependent on participation in the Vine program. More likely, it appears, good products will get good reviews.
 
-One way to learn more about how likely it is that Amazon reviews are unbiased would be apply some statistical rigor to the question. Is that sample size big enough? I don't know? We could also check the frequency of 1-star reviews across the same two categories and see if there's much variance there.
+One way to learn more about how likely it is that Amazon reviews are unbiased would be apply some statistical rigor to the question. We could also check the frequency of 1-star reviews across the same two categories and see if there's much variance there.
